@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'header';
+    src: url('JumperPERSONALUSEONLY-Black.eot');
+    src: url('JumperPERSONALUSEONLY-Black.eot?#iefix') format('embedded-opentype'),
+        url('JumperPERSONALUSEONLY-Black.woff2') format('woff2'),
+        url('JumperPERSONALUSEONLY-Black.woff') format('woff'),
+        url('JumperPERSONALUSEONLY-Black.ttf') format('truetype'),
+        url('JumperPERSONALUSEONLY-Black.svg#JumperPERSONALUSEONLY-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url('DFVN-PexelGrotesk-Regular.eot');
+    src: url('DFVN-PexelGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DFVN-PexelGrotesk-Regular.woff2') format('woff2'),
+        url('DFVN-PexelGrotesk-Regular.woff') format('woff'),
+        url('DFVN-PexelGrotesk-Regular.ttf') format('truetype'),
+        url('DFVN-PexelGrotesk-Regular.svg#DFVN-PexelGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'idk';
+    src: url('JumperPERSONALUSEONLY-Regular.eot');
+    src: url('JumperPERSONALUSEONLY-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JumperPERSONALUSEONLY-Regular.woff2') format('woff2'),
+        url('JumperPERSONALUSEONLY-Regular.woff') format('woff'),
+        url('JumperPERSONALUSEONLY-Regular.ttf') format('truetype'),
+        url('JumperPERSONALUSEONLY-Regular.svg#JumperPERSONALUSEONLY-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* 
+@font-face {
+    font-family: 'nor1'; 
+    src: url('JumperPERSONALUSEONLY-Thin.eot');
+    src: url('JumperPERSONALUSEONLY-Thin.eot?#iefix') format('embedded-opentype'),
+        url('JumperPERSONALUSEONLY-Thin.woff2') format('woff2'),
+        url('JumperPERSONALUSEONLY-Thin.woff') format('woff'),
+        url('JumperPERSONALUSEONLY-Thin.ttf') format('truetype'),
+        url('JumperPERSONALUSEONLY-Thin.svg#JumperPERSONALUSEONLY-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+@font-face {
+    font-family: 'nor';
+    src: url('Gontserrat-Italic.eot');
+    src: url('Gontserrat-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Gontserrat-Italic.woff2') format('woff2'),
+        url('Gontserrat-Italic.woff') format('woff'),
+        url('Gontserrat-Italic.ttf') format('truetype'),
+        url('Gontserrat-Italic.svg#Gontserrat-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'header2';
+    src: url('NewakeDemo.eot');
+    src: url('NewakeDemo.eot?#iefix') format('embedded-opentype'),
+        url('NewakeDemo.woff2') format('woff2'),
+        url('NewakeDemo.woff') format('woff'),
+        url('NewakeDemo.ttf') format('truetype'),
+        url('NewakeDemo.svg#NewakeDemo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fontdam';
+    src: url('Gontserrat-Medium.eot');
+    src: url('Gontserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gontserrat-Medium.woff2') format('woff2'),
+        url('Gontserrat-Medium.woff') format('woff'),
+        url('Gontserrat-Medium.ttf') format('truetype'),
+        url('Gontserrat-Medium.svg#Gontserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+

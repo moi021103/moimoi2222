@@ -1,0 +1,41 @@
+/* Toàn bộ phần chính */
+.skill_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Tiêu đề kỹ năng */
+  .skill_item h4 {
+    display: flex;
+    justify-content: space-between; /* Đẩy chữ phần trăm sang phải */
+    align-items: center; /* Căn giữa dọc */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .skill_item .counter {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Thanh tiến trình */
+  .progress {
+    background-color: #f0f0f0dd; /* Màu nền của thanh */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px; /* Chiều cao của thanh */
+    position: relative;
+  }
+  
+  /* Thanh tiến trình đã hoàn thành */
+  .progress-bar {
+    background: linear-gradient(90deg, #7684ffcf, #b8a0ffb7); /* Gradient màu */
+    height: 100%; /* Đảm bảo thanh đầy đủ chiều cao */
+    width: 0; /* Bắt đầu từ 0 */
+    transition: width 0.5s ease; /* Hiệu ứng mượt khi thanh tiến trình thay đổi */
+    border-radius: 10px; /* Bo góc thanh */
+  }
+
+  

@@ -1,0 +1,203 @@
+#contact .footer-contact li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact .footer-contact i {
+    color: #5c67f2;
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa icon và text */
+    font-size: 20px;
+    /* Điều chỉnh kích thước icon nếu cần */
+}
+
+/* chuột chữ */
+/* Ẩn caret mặc định */
+.typed-cursor {
+    opacity: 0;
+    /* Ẩn caret của thư viện */
+}
+
+.typed-cursor {
+    background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+    /* Gradient */
+    -webkit-background-clip: text;
+    /* Chỉ áp dụng gradient cho text */
+    -webkit-text-fill-color: transparent;
+    /* Đổ gradient vào chữ */
+}
+
+.text-end {
+    text-align: right;
+    /* Căn phải cho toàn bộ nội dung */
+}
+
+.text-end .buttonr {
+    margin-right: 0;
+    /* Đảm bảo không có khoảng cách bất thường */
+    display: inline-block;
+    /* Đảm bảo nút là khối nội dòng */
+}
+
+/* =====================================================         PROJECT         ============================================================= */
+.button-group {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .button.P {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+    background-color: #33333300;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .button.P:hover {
+    background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+    /* Gradient */
+    -webkit-background-clip: text;
+    /* Chỉ áp dụng gradient cho text */
+    -webkit-text-fill-color: transparent;
+    /* Đổ gradient vào chữ */
+  }
+  
+  .button.P.is-checked {
+    background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+    /* Gradient */
+    -webkit-background-clip: text;
+    /* Chỉ áp dụng gradient cho text */
+    -webkit-text-fill-color: transparent;
+    /* Đổ gradient vào chữ */
+  }
+  
+  .projects_item {
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .projects_item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .projects_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.904);
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .projects_item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .projects_item:hover .projects_text {
+    transform: translateY(0);
+  }
+  
+  .projects_text h4 {
+    margin: 0;
+    background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+    /* Gradient */
+    -webkit-background-clip: text;
+    /* Chỉ áp dụng gradient cho text */
+    -webkit-text-fill-color: transparent;
+    /* Đổ gradient vào chữ */
+    font-family: 'header2';
+  }
+  
+  .projects_text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #6e6e6e;
+    font-family: 'nor';
+  }
+  
+
+  /* ==================================================================================================================================== */
+  /*##### EXPERIENCE SECTION #####*/
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tabs Container */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.tab-btn{
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background-color: #33333300;
+  cursor: pointer;
+  font-weight: bold;
+  color: #6e6e6e;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+  background: -webkit-linear-gradient(to right, #a8c5ff, #929dfe);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a8c5ff, #929dfe);
+  color: #fff; /* Màu chữ trắng */
+}
+
+.tab-btn:not(.active):hover {
+  background: -webkit-linear-gradient(to right, #a8c5ff, #929dfe);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a8c5ff, #929dfe);
+  color: white;
+}
+
+/* Tab Content - Ẩn nội dung ban đầu */
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; /* Hiệu ứng mượt trong 0.5s */
+}
+
+.tab-content.active {
+  display: block;
+  opacity: 1;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h4 {
+  font-size: 1.2em;
+  color: #555555;
+  font-weight: bold;
+}
+
+.item p {
+color: #5f74ff;
+}
+
+.item span {
+  color: #525252;
+  font-size: 0.9em;
+}

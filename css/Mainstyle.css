@@ -1,0 +1,1024 @@
+/* CSS Document */
+@import url(../fonts/stylesheet.css);
+
+/* Loại bỏ khung đen khi nhấn vào button */
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: nor;
+  color: #6e6e6e;
+}
+
+.font-special2 {
+  font-family: 'header', serif;
+}
+
+.font-special {
+  font-family: 'idk'
+}
+
+.fontdep {
+  font-family: 'header2';
+}
+
+.fontdam {
+  font-family: 'fontdam';
+}
+
+.bg-tsuot {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-gradient {
+  background: #1c92d2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a8c5ff, #929dfe);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a8c5ff, #929dfe);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  padding: 50px 0;
+}
+
+/* Đặt menu nằm bên phải trên máy tính */
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Menu nằm bên phải */
+}
+
+/* Khi trên màn hình nhỏ (điện thoại), menu nằm bên trái */
+@media (max-width: 991px) { /* Bootstrap breakpoint cho màn hình nhỏ */
+  .menu {
+    justify-content: flex-start; /* Menu nằm bên trái */
+  }
+}
+
+section {
+  margin-top: 50px;
+  /* Tạo khoảng cách phía trên section */
+}
+
+section {
+  padding-top: 70px;
+  /* Tạo khoảng cách bên trong phía trên section */
+}
+
+
+footer {
+  margin-top: 50px;
+  /* Tạo khoảng cách phía trên section */
+}
+
+.text-gdt {
+  background: -webkit-linear-gradient(to right, #5f74ff, #7bcefe);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5f74ff, #7bcefe);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+/* Hiệu ứng hover */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
+}
+
+/* Áp dụng gradient cho chữ khi hover */
+.hvr-fade:hover {
+  background: linear-gradient(45deg, #a8c5ff, #929dfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Áp dụng gradient cho chữ khi active */
+.nav-item.active .hvr-fade {
+  background: linear-gradient(45deg, #a8c5ff, #929dfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.name-color {
+  background: linear-gradient(45deg, #dd2a7b, #8134af);
+  background: -webkit-linear-gradient(45deg, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+.header-cl {
+  background: linear-gradient(to right, #8490ff, #62bdfc);
+  background: -webkit-linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-lb {
+  background-color: #f2fcfe;
+}
+
+.logo-font {
+  color: #0630ee;
+  /*background: #FFFFFF;*/
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  color: #0630ee;
+  /*background: #FFFFFF;*/
+}
+
+.fontdb {
+  font-family: 'logo';
+}
+
+.textlogo {
+  color: #8490ff
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(to right, #5f74ff, #7bcefe);
+  /* Gradient màu */
+  background: linear-gradient(to right, #5f74ff, #7bcefe);
+  border: none;
+  border-radius: 25px;
+  /* Tạo nút bo tròn */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  /* Hiệu ứng chuyển đổi mượt */
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  background: linear-gradient(to right, #917bfe, #5f5fff);
+  /* Đổi màu khi hover */
+  background: -webkit-linear-gradient(to right, #917bfe, #5f5fff);
+  transform: scale(1.1);
+  /* Tăng kích thước nút khi hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bg-img {
+  z-index: 1;
+  background: url(../images/home-banner.jpg) no-repeat scroll center center;
+  background-size: cover;
+}
+
+.feature_area {
+  background: #f9f9ff;
+}
+
+.feature_area.feature_tow {
+  background: #fff;
+}
+
+.feature_area.feature_tow .feature_item {
+  background: #f9f9ff;
+}
+
+.feature_area.feature_tow .feature_item:hover {
+  background: #fff;
+}
+
+.feature_inner {
+  margin-bottom: -30px;
+}
+
+.feature_item {
+  padding: 50px 35px;
+  border-radius: 10px;
+  transition: all 300ms linear 0s;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.feature_item i {
+  margin-bottom: 35px;
+  display: block;
+}
+
+.feature_item i:before {
+  margin-left: 0px;
+  font-size: 60px;
+  color: #e1e1e1;
+  line-height: 60px;
+}
+
+.feature_item h4 {
+  color: #6e6e6e;
+  font-size: 21px;
+  font-family: "header2", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.feature_item p {
+  margin-bottom: 0px;
+}
+
+.feature_item .main_btn {
+  padding: 0px 30px;
+  line-height: 38px;
+}
+
+/* .feature_item:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  border-color: #fff; } */
+
+
+.feature_item:hover i:before {
+  background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+  background: -webkit-linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* độ mooth của progress bars */
+.progress-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, #5f74ff, #7bcefe);
+  background: -webkit-linear-gradient(to right, #5f74ff, #7bcefe);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.progress-circle span {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-bar {
+  transition: width 1.5s ease-in-out;
+  /* Thời gian chuyển tiếp mượt mà */
+}
+
+/* điểm số % trên progress bar*/
+.skill_item {
+  position: relative;
+}
+
+.skill_item h4 {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.skill_item span {
+  position: absolute;
+  right: 10px;
+  /* Đặt khoảng cách tới cạnh phải */
+  top: 50%;
+  /* Canh giữa theo chiều dọc */
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #6e6e6e;
+  /* Màu chữ của phần trăm */
+}
+
+.skill_item h4,
+.skill_item span {
+  font-size: 13px;
+  /* Áp dụng kích thước chữ đồng nhất */
+}
+
+.progress {
+  position: relative;
+  height: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.4s ease;
+  position: relative;
+  z-index: 0;
+}
+
+/* bg bar */
+.bg-bar {
+  background: linear-gradient(to right, #5f74ff, #7bcefe);
+  background: -webkit-linear-gradient(to right, #5f74ff, #7bcefe);
+  border-radius: 10px;
+}
+
+.img-anime {
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+  /* Khoảng cách giữa các icon */
+}
+
+.ss-fb {
+  background: linear-gradient(45deg, #1877F2, #0b5edd);
+  /* Gradient màu xanh lam */
+  background: -webkit-linear-gradient(45deg, #1877F2, #0b5edd);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+.ss-fb:hover i:before {
+  background: linear-gradient(45deg, #0e4eae, #1e6cd0);
+  /* Đảo gradient */
+  background: -webkit-linear-gradient(45deg, #0e4eae, #1e6cd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-fb:hover i:before {
+  background: linear-gradient(45deg, #0e4eae, #1e6cd0);
+  /* Đảo gradient */
+  background: -webkit-linear-gradient(45deg, #0e4eae, #1e6cd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ss-ins {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background: -webkit-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+.s-ins:hover i:before {
+  background: linear-gradient(45deg, #515bd4, #8134af, #dd2a7b, #f58529);
+  /* Đảo gradient */
+  background: -webkit-linear-gradient(45deg, #515bd4, #8134af, #dd2a7b, #f58529);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ss-ins:hover i:before {
+  background: linear-gradient(45deg, #515bd4, #8134af, #dd2a7b, #f58529);
+  /* Đảo gradient */
+  background: -webkit-linear-gradient(45deg, #515bd4, #8134af, #dd2a7b, #f58529);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ss-pin {
+  background: linear-gradient(45deg, #E60023, #FF4B5C);
+  /* Gradient màu đỏ */
+  background: -webkit-linear-gradient(45deg, #E60023, #FF4B5C);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+.ss-pin:hover i:before {
+  background: linear-gradient(45deg, #e94455, #d1001f);
+  /* Đảo màu gradient */
+  background: -webkit-linear-gradient(45deg, #e94455, #d1001f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-pin:hover i:before {
+  background: linear-gradient(45deg, #e94455, #d1001f);
+  /* Đảo màu gradient */
+  background: -webkit-linear-gradient(45deg, #e94455, #d1001f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ss-link {
+  background: #0077B5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ss-link:hover i:before {
+  background: #0039b5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-link:hover i:before {
+  background: #0039b5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Font size cho số */
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  animation: fade-in-up 1s ease-out;
+  /* Hiệu ứng xuất hiện */
+}
+
+/* Font size cho mô tả */
+.stat-box p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  /* Màu chữ nhạt */
+}
+
+/* Hiệu ứng fade-in khi tải trang */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature_item a {
+  text-decoration: none;
+  /* Loại bỏ gạch chân */
+  color: inherit;
+  /* Đảm bảo giữ nguyên màu chữ */
+}
+
+.feature_item a:hover {
+  text-decoration: none;
+  /* Tùy chọn: Chỉ hiển thị gạch chân khi hover */
+  color: inherit;
+  /* Đảm bảo giữ nguyên màu chữ */
+}
+
+a {
+  text-decoration: none;
+  /* Loại bỏ gạch chân */
+  color: inherit;
+  /* Đảm bảo giữ nguyên màu chữ */
+}
+
+a:hover {
+  text-decoration: none;
+  /* Loại bỏ gạch chân */
+  color: inherit;
+  /* Đảm bảo giữ nguyên màu chữ */
+}
+
+.nav-item a:hover {
+  background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+  background: -webkit-linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+/* Tự động xổ menu khi hover vào */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* Đảm bảo menu xuất hiện ngay dưới */
+}
+
+.dropdown-item.active{
+  background: linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+  background: -webkit-linear-gradient(45deg, #5f74ff, #7bcefe, #8e51d4);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Làm trong suốt text để hiện gradient */
+}
+
+/* Slide image */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.25s ease-in-out;
+  will-change: transform;
+}
+
+
+.carousel-images img {
+  height: auto;
+  flex-shrink: 0;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-images img.active {
+  opacity: 1;
+  /* Hình ảnh hiện rõ */
+  visibility: visible;
+  /* Hình ảnh hiển thị */
+}
+
+.carousel .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.dots li.active {
+  width: 30px;
+}
+
+.carousel-images img {
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-images img.active {
+  opacity: 1;
+}
+
+/* ========================================================== TEAM CARD ========================================================== */
+
+
+#team .card {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#team .card:hover {
+  transform: translateY(-10px);
+}
+
+#team .card-body h5 {
+  color: #333;
+  font-weight: bold;
+}
+
+#team .card-body .text-muted {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+#team .card-body .card-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#team .card-body .bi {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+#team .card-body .bi:hover {
+  color: #007bff;
+}
+
+#team .card-body h5 {
+  color: #333;
+  /* Màu chữ ban đầu */
+  font-weight: bold;
+  background: none;
+  /* Không có gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: inherit;
+  /* Giữ nguyên màu chữ */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#team .card:hover .card-body h5 {
+  color: transparent;
+  /* Làm chữ trong suốt khi hover */
+  background: linear-gradient(to right, #957cf1 30%, #62bdfc);
+  background: -webkit-linear-gradient(to right, #957cf1 30%, #62bdfc);
+  -webkit-background-clip: text;
+  /* Áp dụng gradient vào chữ */
+  -webkit-text-fill-color: transparent;
+  /* Hiển thị gradient */
+}
+
+
+/* ========================================================================================================================================= */
+/* Định vị nút cuộn lên đầu trang */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #5f74ff, #7bcefe);
+  background: -webkit-linear-gradient(45deg, #5f74ff, #7bcefe);
+  color: white;
+  /* Màu chữ */
+  border: none;
+  padding: 5px;
+  /* Kích thước của nút */
+  font-size: 15px;
+  /* Kích thước chữ hoặc icon */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  /* Đảm bảo nút không bị che khuất */
+  border-radius: 10px;
+}
+
+/* Kích thước icon bên trong */
+.scroll-top-btn i {
+  font-size: 20px;
+}
+
+/* Màu nền khi hover */
+.scroll-top-btn:hover {
+  background: linear-gradient(45deg, #7f54ed, #7b9cfe);
+  background: -webkit-linear-gradient(45deg, #7f54ed, #7b9cfe);
+}
+
+/* Chỉ hiển thị nút khi trang đã cuộn xuống */
+.scroll-top-btn.hidden {
+  display: none;
+}
+
+/* ============================================================================================================================================== */
+#contact {
+  padding: 50px 0;
+}
+
+#contact h3 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contact p {
+  color: #555;
+  font-size: 1rem;
+}
+
+#contact .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+#contact .btn {
+  background-color: #5c67f2;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#contact .btn:hover {
+  background-color: #4b56d6;
+}
+
+#contact iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================================================================================================= */
+
+/* Footer */
+#footer {
+  background-color: #222;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+#footer .footer-title {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#footer .footer-description {
+  line-height: 1.6;
+}
+
+#footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+#footer .footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer .footer-links a:hover {
+  color: #5c67f2;
+}
+
+#footer .footer-contact li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer .footer-contact i {
+  font-size: 1.2rem;
+  color: #5c67f2;
+}
+
+#footer .social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #bbb;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer Bottom */
+#footer .footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+
+#footer .footer-bottom p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #bbb;
+}
+
+#footer .line-name {
+  color: #007bff;
+}
+
+.newsletter-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #333;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-submit {
+  background-color: #6c63ff;
+  border: none;
+  padding: 4px 10px;
+  font-size: 0.5rem;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #5548c8;
+}
+
+.btn-submit i {
+  font-size: 1.2rem;
+}
+
+/* ======================================================================================================================================================= */
+
+#price .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Căn giữa container */
+  padding: 0 20px;
+  /* Đảm bảo lề bên trong */
+}
+
+.price-card {
+  margin: 5px;
+  /* Tạo khoảng cách giữa các card */
+  flex: 1 1 calc(25% - 10px);
+  /* Đảm bảo chiều rộng cân đối, trừ đi margin */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .price-card {
+    flex: 1 1 90%;
+    /* Card rộng 90% để chừa khoảng cách 2 bên */
+    margin: 10px auto;
+    /* Tạo khoảng cách giữa các card */
+  }
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #5f74ff, #7bcefe);
+  color: white;
+
+}
+
+
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e0e0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  color: #333;
+  border: 5px solid #c1c1c7;
+  position: relative;
+  transition: border 0.3s ease;
+  /* Smooth transition for border */
+}
+
+.price-card:hover .circle {
+  border: 15px solid #596ad4;
+  /* Darker border when hovered */
+
+}
+
+
+.price-card:hover .circle {
+  background: linear-gradient(45deg, #7184ff, #91d7ff);
+  color: white;
+}
+
+.price-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.price-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.price-features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.price-features li:last-child {
+  border-bottom: none;
+}
+
+.price-amount {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.buy-button {
+  display: none;
+  /* Hide the button by default */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #6e6e6e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.price-card:hover .price-amount {
+  opacity: 0;
+  /* Hide the price amount when hovered */
+}
+
+.price-card:hover .buy-button {
+  display: block;
+  /* Show the button when hovering */
+}
+
+.price-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
